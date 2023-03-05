@@ -19,7 +19,9 @@
     align-items: center;
     margin: 20px auto;
     text-align: right;
+    position: relative;
   }
+
   .user-list .avatar {
     margin-left: 10px;
     width: 40px;
@@ -36,7 +38,7 @@
     margin-top: 2px;
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 650px) {
 
     .user-list .hidden-at-550px {
       display: none;
@@ -58,6 +60,12 @@
 
     .user-list .avatar {
       margin-left: 0;
+    }
+
+    .user-list .online-user {
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
   
