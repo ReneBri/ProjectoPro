@@ -15,8 +15,8 @@ export default function OnlineUsersSidebar() {
         {error && <div className="error">{error}</div>}
         {documents && documents.map((user) => (
             <div className="user-list-item" key={user.id}>
-                {user.online && (<span className="online-user"></span>)}
-                <span>{user.displayName}</span>
+                {user.online && (<span className="online-user hidden-at-550px"></span>)}
+                <span className="hidden-at-550px">{user.displayName}</span>
                 <Avatar src={user.photoURL} />
             </div>
         ))}

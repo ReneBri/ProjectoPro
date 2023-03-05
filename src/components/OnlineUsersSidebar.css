@@ -1,5 +1,5 @@
 .user-list {
-    width: 250px;
+    flex: 0 0 250px;
     min-width: 250px;
     padding: 30px;
     box-sizing: border-box;
@@ -35,3 +35,29 @@
     border-radius: 50%;
     margin-top: 2px;
   }
+
+  @media (max-width: 550px) {
+
+    .user-list .hidden-at-550px {
+      display: none;
+    }
+
+    .user-list {
+      flex: 1 0 85px;
+      min-width: 85px;
+      padding: 15px;
+    }
+
+    .user-list h2 {
+      text-align: center;
+    }
+
+    .user-list .user-list-item {
+      justify-content: center;
+    }
+
+    .user-list .avatar {
+      margin-left: 0;
+    }
+  }
+  
