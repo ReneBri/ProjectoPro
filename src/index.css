@@ -73,3 +73,13 @@ textarea {
   padding: 8px;
   margin: 10px 0;
 }
+
+@media (max-width: 650px) {
+  body {
+    font-size: .9em;
+  }
+
+  .page-title  {
+    font-size: 1.2em;
+  }
+}

@@ -38,7 +38,15 @@
     margin-top: 2px;
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 500px) {
+
+    .user-list {
+      display: none;
+    }
+  }
+  
+
+  @media (max-width: 840px) {
 
     .user-list .hidden-at-550px {
       display: none;
@@ -68,4 +76,3 @@
       left: 0;
     }
   }
-  

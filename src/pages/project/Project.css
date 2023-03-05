@@ -31,6 +31,7 @@
   }
   .project-summary .assigned-users {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
   }
   .project-summary .assigned-users .avatar {
@@ -97,4 +98,8 @@
     grid-area: three;
     grid-column: span 2;
   }
+}
+
+@media (max-width: 400px) {
+  
 }
