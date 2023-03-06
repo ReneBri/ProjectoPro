@@ -8,6 +8,8 @@ import { NavLink } from 'react-router-dom'
 
 // components
 import Avatar from './Avatar'
+
+// context
 import { useAuthContext } from '../hooks/useAuthContext'
 
 

@@ -1,11 +1,15 @@
+// styles
 import './Dashboard.css'
 
+// hooks
 import { useCollection } from '../../hooks/useCollection'
 import { useEffect, useState } from "react"
 
 // components
 import ProjectList from '../../components/ProjectList'
 import ProjectFilter from './ProjectFilter'
+
+// context
 import { useAuthContext } from '../../hooks/useAuthContext'
 
 

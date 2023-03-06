@@ -1,6 +1,12 @@
+// hooks
 import { useState, useEffect } from 'react'
+
+// firestore
 import { projectAuth, projectStorage, projectFirestore } from '../firebase/config'
+
+// context
 import { useAuthContext } from './useAuthContext'
+
 
 export const useSignup = () => {
   const [isCancelled, setIsCancelled] = useState(false)

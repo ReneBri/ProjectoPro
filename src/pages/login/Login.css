@@ -1,0 +1,20 @@
+.guest-login {
+    text-align: center;
+    margin: 0 auto 20px auto;
+    max-width: 360px;
+    /* border: 1px solid red; */
+}
+
+.guest-login .btn {
+    margin: 5px;
+}
+
+.guest-login-button-container {
+    margin-top: 10px;
+}
+
+hr {
+    max-width: 720px;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.15)
+}

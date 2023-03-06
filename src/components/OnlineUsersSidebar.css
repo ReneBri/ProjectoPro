@@ -6,6 +6,7 @@
     background: #fbfbfb;
     color: var(--heading-color);
   }
+
   .user-list h2 {
     text-align: right;
     margin-bottom: 40px;
@@ -13,6 +14,7 @@
     border-bottom: 1px solid #eee;
     font-size: 1.2em;
   }
+
   .user-list .user-list-item {
     display: flex;
     justify-content: flex-end;
@@ -37,6 +39,8 @@
     border-radius: 50%;
     margin-top: 2px;
   }
+
+  /* responsive design below */
 
   @media (max-width: 500px) {
 

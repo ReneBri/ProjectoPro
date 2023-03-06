@@ -15,8 +15,10 @@ import { timestamp } from '../../firebase/config'
 // context
 import { useAuthContext } from '../../hooks/useAuthContext'
 
+// routing
 import { useHistory } from 'react-router-dom'
 
+// category array
 const categories = [
   { value: 'development', label: 'Development'},
   { value: 'design', label: 'Design'},

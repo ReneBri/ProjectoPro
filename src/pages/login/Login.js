@@ -19,33 +19,92 @@ export default function Login() {
   }
   
   return (
-    <form className="auth-form" onSubmit={handleSubmit}>
-      <h2>Login</h2>
+    <div>
+      <div className="guest-login">
+        <h2>Log in as a guest</h2>
+        <p>(by clicking on one of these aliases)</p>
+        <div className="guest-login-button-container">
+          <button 
+            className="btn" 
+            onClick={() => {
+              let user = "francheskia@francheskia.com"
+              setEmail(user)
+              setPassword(user)
+              setTimeout(() => {
+                login(user, user)
+              }, 1000)
+              }}>
+                Francheskia
+          </button>
+          <button 
+            className="btn" 
+            onClick={() => {
+              let user = "benryan@benryan.com"
+              setEmail(user)
+              setPassword(user)
+              setTimeout(() => {
+                login(user, user)
+              }, 1000)
+              }}>
+                Ben Ryan
+          </button>
+          <button 
+            className="btn" 
+            onClick={() => {
+              let user = "margo@margo.com"
+              setEmail(user)
+              setPassword(user)
+              setTimeout(() => {
+                login(user, user)
+              }, 1000)
+              }}>
+                Margo
+          </button>
+          <button 
+            className="btn" 
+            onClick={() => {
+              let user = "bobbylee@bobbylee.com"
+              setEmail(user)
+              setPassword(user)
+              setTimeout(() => {
+                login(user, user)
+              }, 1000)
+              }}>
+                Bobby Lee
+          </button>
+        </div>
+      </div>
 
-      <label>
-        <span>email:</span>
-        <input 
-          required
-          type='email' 
-          onChange={(e) => setEmail(e.target.value)}
-          value={email}
-        />
-      </label>
+      <hr />
 
-      <label>
-        <span>password:</span>
-        <input 
-          required
-          type='password' 
-          onChange={(e) => setPassword(e.target.value)}
-          value={password}
-        />
-      </label>
+      <form className="auth-form" onSubmit={handleSubmit}>
+        <h2>Or Login with Email & Password here</h2>
 
-      {!isPending && <button className="btn">Login</button>}
-      {isPending && <button className="btn" disabled>...loading</button>}
-      {error && <div className="error">{error}</div>}
+        <label>
+          <span>email:</span>
+          <input 
+            required
+            type='email' 
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
+        </label>
 
-    </form>
+        <label>
+          <span>password:</span>
+          <input 
+            required
+            type='password' 
+            onChange={(e) => setPassword(e.target.value)}
+            value={password}
+          />
+        </label>
+
+        {!isPending && <button className="btn">Login</button>}
+        {isPending && <button className="btn" disabled>...loading</button>}
+        {error && <div className="error">{error}</div>}
+
+      </form>
+    </div>
   )
 }

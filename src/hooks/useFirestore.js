@@ -1,4 +1,7 @@
+// hooks
 import { useReducer, useEffect, useState } from "react"
+
+// firestore
 import { projectFirestore } from "../firebase/config"
 
 let initialState = {

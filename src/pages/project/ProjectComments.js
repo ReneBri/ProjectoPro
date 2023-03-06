@@ -1,11 +1,19 @@
+// hooks
 import { useState } from 'react'
+
+// firebase
 import { timestamp } from '../../firebase/config'
-import { useAuthContext } from '../../hooks/useAuthContext'
 import { useFirestore } from '../../hooks/useFirestore'
 
+// context
+import { useAuthContext } from '../../hooks/useAuthContext'
+
+// cool date formatting
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
+// components
 import Avatar from '../../components/Avatar'
+
 
 export default function ProjectComments({ project }) {
 

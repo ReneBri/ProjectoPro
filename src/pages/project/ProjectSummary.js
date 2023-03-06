@@ -1,7 +1,13 @@
 // components
 import Avatar from "../../components/Avatar";
+
+// context
 import { useAuthContext } from "../../hooks/useAuthContext";
+
+// firestore
 import { useFirestore } from "../../hooks/useFirestore";
+
+// routing
 import { useHistory } from 'react-router-dom'
 
 

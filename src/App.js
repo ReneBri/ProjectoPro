@@ -17,6 +17,7 @@ import Sidebar from './components/Sidebar'
 import { useAuthContext } from './hooks/useAuthContext'
 import OnlineUsersSidebar from './components/OnlineUsersSidebar'
 
+
 function App() {
 
   const { user, authIsReady } = useAuthContext()
